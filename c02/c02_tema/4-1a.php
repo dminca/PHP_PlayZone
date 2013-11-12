@@ -33,7 +33,10 @@ $persons = array(array('surname'=>'Steve', 'name'=>'Jobs', 'age'=>43, 'sex'=>'m'
 ?>
 
 <?php # afisam varsta medie total
-
+foreach($persons as $key => $value){
+	print_r($value['age']); echo "<br/>";
+	$varsta = $value['age'];
+}
 
 ?>
 </body>
